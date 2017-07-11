@@ -31,7 +31,7 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should get contact" do
-  	get contact_url  # contact_path would work too
+  	get contact_url  # contact_path would work too, but is best used for external links (emails, youtube links, etc.)
   	assert_response :success
   	assert_select "title", "Contact | #{@base_title}"
   end
